@@ -3,7 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 
-@st.cache_data
+@st.cache
 def load_data(ticker, start_date, end_date):
     dates = pd.date_range(start=start_date, end=end_date)
     data = pd.DataFrame(data={'Date': dates, 'Price': np.random.randn(len(dates)) * 10 + 100})

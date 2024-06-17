@@ -6,7 +6,7 @@ from sklearn.ensemble import RandomForestRegressor
 import yfinance as yf
 from datetime import datetime, timedelta
 
-@st.cache_data
+@st.cache
 def obtener_datos_financieros(ticker, start, end):
     datos = yf.download(ticker, start=start, end=end)
     datos.reset_index(inplace=True)

@@ -6,7 +6,7 @@ st.set_page_config(
     page_icon="👨🏻‍💻",
 )
 
-# from ensamblado import mostrar_pagina_ensamblado  # Asegúrate de que el nombre del archivo y la función sean correctos
+from ensamblado import mostrar_pagina_ensamblado  # Asegúrate de que el nombre del archivo y la función sean correctos
 from lstm import mostrar_pagina_lstm  # Importa la función de la página LSTM
 from svm import mostrar_pagina_svm  # Importa la función de la página SVM
 from svc import mostrar_pagina_svc  # Importa la función de la página SVC
@@ -44,8 +44,8 @@ def mostrar_pagina_inicio():
         """
         st.markdown(equipo)
         
-    #elif page == "MODELO ENSAMBLADO":
-        #mostrar_pagina_ensamblado()  # Llama directamente a la función
+    elif page == "MODELO ENSAMBLADO":
+        mostrar_pagina_ensamblado()  # Llama directamente a la función
 
     elif page == "MODELO LSTM":
         mostrar_pagina_lstm()

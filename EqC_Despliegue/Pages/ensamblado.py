@@ -77,6 +77,7 @@ def plot_forecast(dates_test, y_test, svm_predictions, lstm_predictions, combine
     ax.set_xlabel('Fecha')
     ax.set_ylabel('Precio Normalizado')
     ax.legend()
+    plt.xticks(rotation=45)  # Rota las etiquetas de las fechas 45 grados
     st.pyplot(fig)
 
 # Función para generar predicciones y métricas
